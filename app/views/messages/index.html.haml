@@ -3,14 +3,14 @@
     .header
       .header__sidebox
         %p.user
-          masa
+          = current_user.name
         %ul.menu
           %li.list 
             = link_to '#' do
               = icon('fa', 'edit',class: 'icon')
           %li.list 
-            = link_to '#' do
-              =icon('fa', 'cog',class: 'icon')
+            = link_to edit_user_path(current_user) do
+              = icon('fas', 'cog', class: 'icon')
     .side__groups
       .group
         .name
