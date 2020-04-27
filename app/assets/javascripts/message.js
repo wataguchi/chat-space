@@ -55,7 +55,7 @@ $('#new_message').on('submit', function(e){
     var html = buildHTML(data);
     $('.main__chat').append(html);
     $('.main__chat').animate({ scrollTop: $('.main__chat')[0].scrollHeight});
-    $('form')[0].reset();\
+    $('form')[0].reset();
   })
   .fail(function(){
     alert("メッセージ送信に失敗しました");
